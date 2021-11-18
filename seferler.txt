@@ -1,0 +1,7 @@
+Sefer No      Guzergah      Gidis Tarihi        Saat       Gidis       Donus       Kapasite       Fiyat       Plaka         Kaptan             Firma
+1             Manisa         20.06.2020          15:30      Istanbul    Kocaeli         44            120      06 CAS 981    Cengiz Yilmaz       Kamilkoc
+2             Manisa         20.06.2020          15:30      Kocaeli     Izmir         44            90      01 PYK 4735    Cengiz Yilmaz       Kamilkoc
+3             Bolu         08.09.2020          19:40      Ankara     Kocaeli         40            90      01 BYT 6985    Celal Aktas       Pamukkale
+4             Manisa         20.06.2020          21:10      Kocaeli     Izmir         36            80      41 BSM 1576    Melike Uzun       Metro
+5             Manisa         20.06.2020          08:15      Izmir     Kocaeli         44            120      01 PYK 4735    Levent Kara       Efetur
+6             Bolu         20.06.2020          21:10      Kocaeli     Ankara         40            90      01 PYK 4735    Melike Uzun       Metro
