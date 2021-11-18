@@ -79,7 +79,7 @@ public:
 
     SeferLinkedList(); //Constructer
     ~SeferLinkedList();
-    bool empty() const; //bos mu?
+    bool empty() const;
     const string &front() const;
     const string &back() const;
     void sBasaEkle(const string &e);
@@ -95,7 +95,7 @@ public:
 
 protected:
     void sDugumEkle(SeferNode *y,const int &seferno,const string &guzergah,const string &gitarih,const string &gSeferSaat,const string &gidis,const string &donus,const int &kapasite,const int &sFiyat,
-                                const string &Plaka,const string &kaptan,const string &firma); // y den öncesine 1 dü?üm ekler
+                                const string &Plaka,const string &kaptan,const string &firma); // y den Ã¶ncesine 1 dÃ¼?Ã¼m ekler
     void sDugumSil(SeferNode *y);
     };
 
@@ -139,7 +139,7 @@ public:
 
     KoltukLinkedList(); //Constructer
     ~KoltukLinkedList();
-    bool  empty() const; //boþ mu?
+    bool  empty() const;
     const string &front() const;
     const string &back() const;
     void kBasaEkle(const string &e);
@@ -154,7 +154,7 @@ public:
 
 protected:
     void kDugumEkle(KoltukNode *y,const int &sefer,const string &e,const int &fiyat,const int &kpst,
-                                  const string &mAd,const string &mSoyad,const string &cinsiyeti,const string &durum); // y den öncesine 1 dü?üm ekler
+                                  const string &mAd,const string &mSoyad,const string &cinsiyeti,const string &durum); // y den Ã¶ncesine 1 dÃ¼?Ã¼m ekler
     void kDugumSil(KoltukNode *y);
 
 };
@@ -205,22 +205,22 @@ bool KoltukLinkedList::empty() const
     return (kHeader->Knext==kTrailer);
 }
 
-const string &SeferLinkedList::front() const //ba?taki elemany getirir
-{
+const string &SeferLinkedList::front() const //bastaki elemany getirir
+i
     return (sHeader->Snext->Selem);
 }
 
-const string &KoltukLinkedList::front() const //ba?taki elemany getirir
+const string &KoltukLinkedList::front() const //bastaki elemani getirir
 {
     return (kHeader->Knext->Kelem);
 }
 
-const string &SeferLinkedList::back() const //sondaki elemany getirir
+const string &SeferLinkedList::back() const //sondaki elemani getirir
 {
     return (sTrailer->Sprev->Selem);
 }
 
-const string &KoltukLinkedList::back() const //sondaki elemany getirir
+const string &KoltukLinkedList::back() const //sondaki elemani getirir
 {
     return (kTrailer->Kprev->Kelem);
 }
@@ -295,8 +295,8 @@ void KoltukLinkedList::kSonaEkle(const int &sefer,const string &e,const int &fiy
             sEklendiMi=true;
         }
       }while (u!=sTrailer);
-    cout<<"Önüne eklemek istediðiniz sefer numarasý bulunamamýþtýr !"<<endl;
-}
+    cout<<"Ã–nÃ¼ne eklemek istediginiz sefer numarasi bulunamamistir !"<<endl;
+
 */
 /*
 void KoltukLinkedList::kListeyeEkle(const string &e, const string &x)
@@ -312,7 +312,7 @@ void KoltukLinkedList::kListeyeEkle(const string &e, const string &x)
             kEklendiMi=true;
         }
       }while (u!=kTrailer);
-    cout<<"Önüne eklemek istediðiniz koltuk numarasý bulunamamýþtýr !"<<endl;
+    cout<<"Ã–nÃ¼ne eklemek istediginiz koltuk numarasi bulunamamistir !"<<endl;
 }
 */
 void SeferLinkedList::sDugumSil(SeferNode *y)
@@ -366,7 +366,7 @@ void SeferLinkedList::sElemanSil(const string &e)
         }
     }while(u!=sTrailer);
     if(SilindiMi==false)
-        cout<<"silmek istediðiniz sefer bulunamadý"<<endl;
+        cout<<"silmek istediÃ°iniz sefer bulunamadÃ½"<<endl;
 }
 
 void KoltukLinkedList::kElemanSil(const string &e)
@@ -383,7 +383,7 @@ void KoltukLinkedList::kElemanSil(const string &e)
     }while(u!=kTrailer);
     cout<<"Silme islemi basarili"<<endl;
     if(SilindiMi==false)
-        cout<<"silmek istediðiniz koltuk bulunamadý"<<endl;
+        cout<<"silmek istediÃ°iniz koltuk bulunamadÃ½"<<endl;
 }
 
 void SeferLinkedList::sListeyiListele()
